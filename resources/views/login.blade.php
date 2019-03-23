@@ -76,7 +76,7 @@
                 var _token=$("#_token").val();
                 $.ajax({
                     type:'post',
-                    url:"{{url('loginDo')}}",
+                    url:"{{url('logindo')}}",
                     data:{txtPassword:txtPassword,txtAccount:txtAccount,_token:_token,verifycode:verifycode},
                     dataType:'json'
                 }).done(function (res) {

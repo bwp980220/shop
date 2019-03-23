@@ -14,7 +14,7 @@ class UserController extends Controller
         return view('login');
     }
     //登录
-    public function loginDo(Request $request)
+    public function logindo(Request $request)
     {
         $usermodel=new User;
         if(empty($request->txtAccount)){

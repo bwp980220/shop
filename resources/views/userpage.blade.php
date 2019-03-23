@@ -9,15 +9,15 @@
         <a href="" class="orange">注册</a>
     </div>
     <div class="welcome">
-        <i class="set"></i>
+        <i class="set"><a href="{{url('set')}}"></a></i>
         <div class="login-img clearfix">
             <ul>
                 <li><img src="images/goods2.jpg" alt=""></li>
                 <li class="name">
-                    <h3>{{}}}</h3>
+                    <h3>{{session('user_name')}}</h3>
                     <p>ID：10030053</p>
                 </li>
-                <li class="next fr"><s></s></li>
+                <li class="next fr"><s><a href="{{url('edituser')}}"></a></s></li>
             </ul>
         </div>
         <div class="chao-money">
