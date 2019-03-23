@@ -37,7 +37,6 @@
                     </dl>
                 </li>
             </ul>
-            <input type="hidden" id="_token" value="{{csrf_token()}}">
             <a id="btnLogin" href="javascript:;" class="orangeBtn loginBtn">登录</a>
         </div>
         <div class="forget">
@@ -73,11 +72,11 @@
                     layer.msg('密码不能为空');
                     return false;
                 }
-                var _token=$("#_token").val();
+               // var _token=$("#_token").val();
                 $.ajax({
                     type:'post',
                     url:"{{url('logindo')}}",
-                    data:{txtPassword:txtPassword,txtAccount:txtAccount,_token:_token,verifycode:verifycode},
+                    data:{txtPassword:txtPassword,txtAccount:txtAccount,_token:'{{csrf_token()}}',verifycode:verifycode},
                     dataType:'json'
                 }).done(function (res) {
                     if(res.code==1){
