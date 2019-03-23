@@ -21,6 +21,7 @@ class VerifyCsrfToken extends Middleware
     protected $except = [
         //
         'alipay/*',
+        'http://login/do',
         'http://register/do',
         'http://code',
     ];
