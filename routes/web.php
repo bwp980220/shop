@@ -25,6 +25,14 @@ Route::prefix('/')->group(function(){
     route::any('writeaddr','IndexController@writeaddr');
     route::any('getarea/{id}','IndexController@getarea');
     route::any('writeaddrdo','IndexController@writeaddrdo');
+    //邀请有奖
+    route::any('invite','IndexController@invite');
+    //我的钱包
+    route::any('mywallet','IndexController@mywallet');
+    //晒单
+    route::any('sharedetail','IndexController@sharedetail');
+    //潮购记录
+    route::any('recorddetail','IndexController@recorddetail');
 });
 //路由组login
 Route::prefix('/')->group(function(){

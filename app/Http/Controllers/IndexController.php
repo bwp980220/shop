@@ -181,4 +181,26 @@ class IndexController extends Controller
             }
         }
     }
+    //邀请有奖
+    public function invite(){
+        return view('invite');
+    }
+    //我的钱包
+    public function mywallet(){
+        return view('mywallet');
+    }
+    //潮购记录
+    public function buyrecord(){
+        return view('buyrecord');
+    }
+    //我的晒单
+    public function sharedetail(){
+        return view('sharedetail');
+    }
+    //我的晒单
+    public function recorddetail(){
+        return view('recorddetail');
+    }
+
+
 }
