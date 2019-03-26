@@ -48,7 +48,7 @@
                 </dt>
                 <dd>
                     <a href="javascript:;" id="a_payment" class="orangeBtn w_account remove">删除</a>
-                    <a href="javascript:;" id="a_payment" class="orangeBtn w_account">去结算</a>
+                    <a href="{{('payment')}}" id="a_payment" class="orangeBtn w_account">去结算</a>
                 </dd>
             </dl>
         </div>
@@ -89,7 +89,7 @@
     <script>
 
         //删除
-        $(document).on('click','#del',function () {
+        $(document).on('click','.orangeBtn w_account remove',function () {
            var  goods_id=$(this).attr('goods_id');
            var _token=$('#_token').val();
            //console.log(goods_id);

@@ -21,6 +21,10 @@ Route::prefix('/')->group(function(){
     route::any('shopcontent/{id?}','IndexController@shopcontent');
     route::any('set','IndexController@set');
     route::any('edituser','IndexController@edituser');
+    route::any('address','IndexController@address');
+    route::any('writeaddr','IndexController@writeaddr');
+    route::any('getarea/{id}','IndexController@getarea');
+    route::any('writeaddrdo','IndexController@writeaddrdo');
 });
 //路由组login
 Route::prefix('/')->group(function(){
@@ -36,6 +40,8 @@ Route::prefix('/')->group(function(){
     route::post('cateshop','Goods\GoodsController@cateshop');
     route::get('cateshops/{id?}','Goods\GoodsController@cateshops');
     route::post('sortshop','Goods\GoodsController@sortshop');
+    //结算
+    route::any('payment','Goods\GoodsController@payment');
 
 });
     route::any('verify/create','CaptchaController@create');

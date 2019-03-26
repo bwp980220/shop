@@ -75,6 +75,11 @@ class GoodsController extends Controller
         }
         return view('div',['data'=>$data]);
     }
+    //结算
+    public function payment()
+    {
+        return view('payment');
+    }
 
 
 }
