@@ -125,7 +125,7 @@ layui.use('form', function(){
             //console.log(obj);
             //验证
             if(obj.province==''){
-                layer.msg('请选择完整的配送地区');
+                layer.msg('选择完整的配送地区');
                 return false;  
             }
             //添加
